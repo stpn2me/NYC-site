@@ -1156,6 +1156,21 @@ nav {
   background-color: #fff;
 }
 
+.vote {
+    position: absolute;
+    top: 784px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 704px;
+    z-index: 1000;
+    opacity: .8;
+    -ms-zoom: 0.55;
+    -moz-transform: scale(0.55);
+    -o-transform: scale(0.55);
+    -webkit-transform: scale(0.55);
+}
+
 @media (max-width: 1136px) {
   .navbar-header {
     float: none;
