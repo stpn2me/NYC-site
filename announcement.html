@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewYork Coin Community Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/logo.gif" alt="Bitcoin New York">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-119486571-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-119486571-1');
+    </script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">Loading...</div>
+    </div>
+    <section>
+      <div class="header" style="position: relative; max-height: 500px;">
+        <div class="header-overlay " style="position: relative; max-height: 500px;" ">
+          <!-- Navbar (Bootstrap) -->
+          <nav class="navbar navbar-default navbar-fixed-top navbar-padding navbar-default-black-bg ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header ">
+              <a type="button " class="navbar-toggle " data-toggle="collapse " data-target=".navbar-ex1-collapse ">
+                <span class="sr-only ">Toggle navigation</span>
+                <span class="fa fa-bars "></span>
+              </a>
+              <!-- Logo -->
+              <a class="navbar-brand " href="index.html " style="display: inline-block; ">
+                <span style="display: inline-block; "><img src="img/logo.png " id="logo " alt="logo " class="img-responsive logo "></span>
+                <span class=" menu-color logo-text " style="display: inline-block; ">
+                  New York Coin
+                </span>
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
+              <ul class="nav navbar-nav navbar-right ">
+                <li >
+                  <a href="index.html " class="menu-color ">Home</a>
+                </li>
+                <li >
+                  <a href="roadmap.html " class="menu-color ">Roadmap</a>
+                </li>
+                <li >
+                  <a href="forkqa.html " class="menu-color ">Fork Q&A</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+          <!-- end of nabvar (Bootstrap) -->
+          <div class="title-wrap ">
+            <div class="center-title text-center ">
+              <h1>New York Coin</h1>
+              <h2>The State of NewYorkCoin</h2>
+              <div class="col-lg-12 as-header "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="announce ">
+      <div class="col-lg-7 center-block " style="float: none; ">
+        <h2 class="text-center ">State of the NewYorkCoin Network</h2>
+        <p >In recent weeks and months (perhaps longer) the NewYorkCoin network has been taken advantage of by large multipools. The most abusive of these pools is mining-dutch.nl. In the past week we have seen Mining-Dutch throw upwards of 2 TH/s of hash
+          power at the NYCoin network for relatively brief periods of time.</p>
+        <p>This accomplishes two things:</p>
+        <ul>
+          <li>Allows mining-dutch to near insta-mine nyc blocks at a rate of ~1-2 seconds per block</li>
+          <li>Drives difficulty up at times past 12,000 for extended periods, which leaves other pools to pick up the slack as mining-dutch then backs off until the difficulty lowers and they repeat the process. The community has been doing it's best to
+            supplement other pools to prevent the network from freezing but there are not enough miners to really compete with that kind of hash power.</li>
+        </ul>
+        <p>Mining-Dutch is not the only pool that has taken advantage of this flaw in the NewYorkCoin network. The flaw itself comes from the difficulty adjust algorithm, Kimoto Gravity Well (KGW), which works well enough if the hashrate increases are a bit
+          more gradual but is vulnerable to the kinds of hash rate swings we have been seeing lately.
+        </p>
+        <p>The plus side to this activity is that NewYorkCoin is being noticed by a larger amount of people. This unfortunately is also a negative as more people will learn of this vulnerability and exploit it, leaving the hard working NYCoin miners left to
+          pick up the pieces with sometimes hour long block times.</p>
+        <p>As aforementioned, this kind of activity also leaves the network unstable as we cannot accurately guarantee 30 second block times.</p>
+        <p>Because the core code base is aging and has not had any major security updates since 2014, we are also vulnerable to a broad array of outright attacks. There are flaws in KGW that are widely known and frankly renting hash power for Scrypt based
+          coins is relatively cheap.</p>
+        <p>In light of the recent 51% attacks on a variety of coins, the team of NewYorkCoin community developers are taking the measures to secure the NYCoin network, prevent any future attacks and provide consistent block times.</p>
+        <h3>The following technologies are planned to be implemented:
+        </h3>
+        <h4>Digishield</h4>
+        <ul>
+          <li>This is a difficulty adjust algorithm that has proven to be more effective than KGW in handling dramatic hashrate swings. It is not without it's flaws, but combined with the second tech on this list we believe it will give us greater defense from
+            large multipools.
+          </li>
+        </ul>
+        <h4>AuxPow/Merge Mining</h4>
+        <ul>
+          <li>By implementing Auxiliary Proof of Work NewYorkCoin can be merge mined with any Scrypt based coin that has a higher difficulty than NYCoin. This means that you can mine something like Litecoin and solve NYC blocks for free when the difficulty
+            target for NYC is reached. For example, if I have 2 L3+ miners I can mine LTC, Dogecoin, and NYCoin at the same time without adding any additional miners or energy sucking equipment. This will also give the NYCoin network the benefit of having an
+            insanely high and stable hash rate provide we can get a couple of the large litecoin pools to merge mine the coin. We are already in communication with a couple of pools that are potentially open to the idea.
+          </li>
+        </ul>
+        <h4>Advanced Checkpointing</h4>
+        <ul>
+          <li>(this one is still being researched) Advanced Checkpointing is basically the same as the standard checkpoint system with the exception that checkpoints would be pushed to client wallets from a central location(s) similar to a master node. This
+            will allow for client wallets to be continuously updated and prevent older client nodes from being a point of attack. For example, the original NYC wallet has checkpoint code in place but the checkpoints are NOT FROM NYCOIN. They are from LTC or BTC
+            and will do absolutely nothing when presented with a 51% attack. This is not the only vulnerability in the older wallet.</li>
+        </ul>
+        <h4>Block Reward Reduction</h4>
+        <ul>
+          <li>The Block Reward Reduction schedule represents a halving of rewards over time as seen in the example below:
+            <ul>
+              <li>Current block reward - 10,000 nyc</li>
+              <li>After block 4,500,000 - 5000 nyc</li>
+              <li>After block 5,000,000 - 2500 nyc</li>
+              <li>After block 5,500,000 - 1250 nyc</li>
+              <li>After block 6,000,000 - 625 nyc</li>
+              <li>After block 6,500,000 - 100 nyc</li>
+              <li>From block 7,000,000 50 nyc</li>
+            </ul>
+          </li>
+        </ul>
+        <plass=" ">The first three changes will require a hard fork. We will be doing our very best to ease that transition and we will let everyone know when the code is ready and when a fork will happen. A block reward reduction will also be introduced
+          with this code however that does not in itself require a hard fork, the other changes do.</p>
+        <p>
+          <strong>We have spent the past 4 months doing our best to figure out a way to protect the network against the vulnerabilities mentioned above without having to hard fork. Unfortunately it is not possible.</strong>
+        </p>
+        <p>
+          <strong>If NewYorkCoin is to survive much past the next big exchange listing, these updates need to occur.</strong>
+        </p>
+      </div>
+    </section>
+    <section class="footer text-center " style="overflow: auto; background-color: #212121 ">
+      <div class="col-lg-12 " style="overflow: auto; ">
+        <div class="col-lg-6 com-md-6 col-sm 6 ">
+          <h4>Social</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/NewYorkCoinCommunity/ ">
+                <i class="fa fa-facebook "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nycoincommunity ">
+                <i class="fa fa-twitter "></i>
+              </a>
+            </li>
+            <li>
+              <a href="hhttps://www.reddit.com/r/nycoincommunity/ ">
+                <i class="fa fa-reddit "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/newyorkcoinnyc/ ">
+                <i class="fa fa-instagram "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meetup.com/BTC-NYC/ ">
+                <i class="fa fa-meetup " aria-hidden="true "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/orgs/NewYorkCoin-NYC/ ">
+                <i class="fa fa-github "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/euGaWRu " title=" "><i class=" fab="fab" fa-discord="fa-discord" "></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/nycoincommunity/ " title=" "><i class=" fab="fab" fa-youtube="fa-youtube" "></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6 com-md-6 col-sm 6 ">
+      <h4>Contact:</h4>
+      <ul>
+        <li>
+          <i class="fas fa-envelope " style="color: #fff; "></i>
+          <a href="mailto:contact@nycoin.community ">contact@nycoin.community</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-12 text-center " id="contact ">
+      <p>Copyright 2018. New York Coin. All rights reserved</p>
+    </div>
+  </div>
+</section>
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery.js "></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js " integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS " crossorigin="anonymous "></script>
+<script src="js/owl.carousel.js "></script>
+<script type="text/javascript " src="js/jquery.malihu.PageScroll2id.min.js "></script>
+<script type="text/javascript " src="js/SmoothScroll.js "></script>
+<script src="js/main.js "></script>
+</body>
+</html>
