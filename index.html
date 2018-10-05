@@ -32,6 +32,7 @@
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/logo.gif" alt="Bitcoin New York">
+  <link rel="stylesheet" href="css/flipclock.css">
 </head>
 
 <body>
@@ -78,6 +79,9 @@
         <!-- end of nabvar (Bootstrap) -->
         <div class="title-wrap">
           <div class="center-title text-center">
+            <!-- support for fork countdown clock -->
+            <h2>Security Fork Countdown</h2>
+            <div class="clock" style="margin: 0 auto;width: 460px"></div>
             <!-- <h3>Real world use</h3> -->
             <h1>New York Coin</h1>
             <h2>A lightning fast cryptocurrency with worldwide retail acceptance</h2>
@@ -802,6 +806,30 @@ x.addListener(myFunction)
 
   </script>
   <script src="js/main.js"></script>
+  <!-- support for fork countdown clock -->
+  <script src="js/flipclock.min.js"></script>
+  <script type="text/javascript">
+      var clock;
+      var forkHeight = 4800000;
+
+      $.ajax({
+          url: '//explorer.nycoin.info/api/getblockcount',
+          success: function(currentBlockHeight){
+              console.log(currentBlockHeight);
+              var blocksToGo = forkHeight - currentBlockHeight;
+              var secondsToGo = blocksToGo * 30;
+
+              // Instantiate a countdown FlipClock
+              clock = $('.clock').FlipClock(secondsToGo, {
+                  clockFace: 'DailyCounter',
+                  countdown: true,
+                  showSeconds: false
+              });
+          },
+          dataType: 'html',
+          crossDomain: true
+      });
+  </script>
 </body>
 
 </html>
