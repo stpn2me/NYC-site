@@ -821,6 +821,7 @@ x.addListener(myFunction)
       };
       $.ajax({
           url: '//explorer.nycoin.community/api/getblockcount',
+          cache: false,
           success: function(currentBlockHeight){
               console.log(currentBlockHeight);
 
@@ -838,7 +839,7 @@ x.addListener(myFunction)
               var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
               setCountDownClock(diff);
           },
-          dataType: 'html',
+          dataType: 'html'
       });
   </script>
 </body>
