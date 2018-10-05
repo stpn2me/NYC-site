@@ -811,23 +811,34 @@ x.addListener(myFunction)
   <script type="text/javascript">
       var clock;
       var forkHeight = 4800000;
-
+      var setCountDownClock = function(secondsToGo) {
+          // Instantiate a countdown FlipClock
+          clock = $('.clock').FlipClock(secondsToGo, {
+              clockFace: 'DailyCounter',
+              countdown: true,
+              showSeconds: false
+          });
+      };
       $.ajax({
-          url: '//explorer.nycoin.info/api/getblockcount',
+          url: '//explorer.nycoin.community/api/getblockcount',
           success: function(currentBlockHeight){
               console.log(currentBlockHeight);
+
               var blocksToGo = forkHeight - currentBlockHeight;
               var secondsToGo = blocksToGo * 30;
 
-              // Instantiate a countdown FlipClock
-              clock = $('.clock').FlipClock(secondsToGo, {
-                  clockFace: 'DailyCounter',
-                  countdown: true,
-                  showSeconds: false
-              });
+              setCountDownClock(secondsToGo);
+          },
+          error: function() {
+              var currentDate = new Date();
+
+              var futureDate  = new Date("10/29/2018");
+
+              // Calculate the difference in seconds between the future and current date
+              var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+              setCountDownClock(diff);
           },
           dataType: 'html',
-          crossDomain: true
       });
   </script>
 </body>
