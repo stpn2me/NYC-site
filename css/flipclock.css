@@ -40,6 +40,13 @@
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
   -webkit-user-select: none; }
 
+/* prevent countdown clock from being pushed off screen */
+@media only screen and (max-width: 625px) {
+  .flip-clock-wrapper {
+    zoom: 50%;
+  }
+}
+
 .flip-clock-meridium {
   background: none !important;
   box-shadow: 0 0 0 !important;
