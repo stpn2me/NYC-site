@@ -32,18 +32,20 @@
 .flip-clock-wrapper.clearfix:after {
   clear: both; }
 
-.flip-clock-wrapper.clearfix {
-  *zoom: 1; }
-
 /* Main */
 .flip-clock-wrapper {
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
   -webkit-user-select: none; }
 
 /* prevent countdown clock from being pushed off screen */
-@media only screen and (max-width: 625px) {
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+  h2.count-down {
+    padding-top: 10%;
+  }
+
   .flip-clock-wrapper {
-    zoom: 50%;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 25% 0;
   }
 }
 
