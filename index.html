@@ -811,6 +811,7 @@ x.addListener(myFunction)
   <script type="text/javascript">
       var clock;
       var forkHeight = 4800000;
+      var getBlockCountUrl = '//explorer.nycoin.community/api/getblockcount';
       var setCountDownClock = function(secondsToGo) {
           // Instantiate a countdown FlipClock
           clock = $('.clock').FlipClock(secondsToGo, {
@@ -819,8 +820,18 @@ x.addListener(myFunction)
               showSeconds: false
           });
       };
+
+      // cache buster for api/getblockcount
+      (function(){
+          var i = document.createElement('iframe');
+          i.style.display = 'none';
+          i.onload = function() { i.parentNode.removeChild(i); };
+          i.src = getBlockCountUrl;
+          document.body.appendChild(i);
+      })();
+      // get current block height needed to calculate remaining time for countdown clock
       $.ajax({
-          url: '//explorer.nycoin.community/api/getblockcount',
+          url: getBlockCountUrl,
           success: function(currentBlockHeight){
               console.log(currentBlockHeight);
 
