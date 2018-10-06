@@ -808,45 +808,7 @@ x.addListener(myFunction)
   <script src="js/main.js"></script>
   <!-- support for fork countdown clock -->
   <script src="js/flipclock.min.js"></script>
-  <script type="text/javascript">
-      var clock;
-      var forkHeight = 4800000;
-      var getBlockCountUrl = '//explorer.nycoin.community/api/getblockcount';
-      var setCountDownClock = function(secondsToGo) {
-          // Instantiate a countdown FlipClock
-          clock = $('.clock').FlipClock(secondsToGo, {
-              clockFace: 'DailyCounter',
-              countdown: true,
-              showSeconds: false
-          });
-      };
-
-      // get current block height needed to calculate remaining time for countdown clock
-      $.ajax({
-          url: getBlockCountUrl,
-          headers: {
-              'Cache-Control': 'no-cache'
-          },
-          success: function(currentBlockHeight){
-              console.log(currentBlockHeight);
-
-              var blocksToGo = forkHeight - currentBlockHeight;
-              var secondsToGo = blocksToGo * 30;
-
-              setCountDownClock(secondsToGo);
-          },
-          error: function() {
-              var currentDate = new Date();
-
-              var futureDate  = new Date("10/29/2018");
-
-              // Calculate the difference in seconds between the future and current date
-              var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-              setCountDownClock(diff);
-          },
-          dataType: 'html'
-      });
-  </script>
+  <script src="js/countdown-to-fork.js"></script>
 </body>
 
 </html>
