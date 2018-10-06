@@ -821,17 +821,12 @@ x.addListener(myFunction)
           });
       };
 
-      // cache buster for api/getblockcount
-      (function(){
-          var i = document.createElement('iframe');
-          i.style.display = 'none';
-          i.onload = function() { i.parentNode.removeChild(i); };
-          i.src = getBlockCountUrl;
-          document.body.appendChild(i);
-      })();
       // get current block height needed to calculate remaining time for countdown clock
       $.ajax({
           url: getBlockCountUrl,
+          headers: {
+              'Cache-Control': 'no-cache'
+          },
           success: function(currentBlockHeight){
               console.log(currentBlockHeight);
 
