@@ -32,6 +32,16 @@
 .flip-clock-wrapper.clearfix:after {
   clear: both; }
 
+/* Counter */
+.counter {
+  -webkit-transform: scale(.25);
+  position: absolute !important;
+  top: 8px;
+  left: 0;
+  width: auto !important;
+  margin: auto !important;
+}
+
 /* Main */
 .flip-clock-wrapper {
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
@@ -43,7 +53,7 @@
     padding-top: 10%;
   }
 
-  .flip-clock-wrapper {
+  .clock {
     -webkit-transform: scale(.5);
     -webkit-transform-origin: 25% 0;
   }
