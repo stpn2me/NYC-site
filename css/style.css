@@ -162,6 +162,8 @@ nav {
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
   max-height: 100%;
+  /* this might be needed as a result of the block counter in the header and can be removed with the counter*/
+  padding-left: 20px;
 }
 
 .navbar-default .navbar-nav>li>a {
