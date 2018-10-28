@@ -16,6 +16,8 @@
             clockFace: 'Counter'
         });
 
+        $('.counter').width(blocksToGo.toString().length * 70);
+
         setTimeout(function() {
             setInterval(function() {
                 $.ajax({
@@ -63,6 +65,7 @@
         error: function() {
             console.log("falling back to hard coded fork date");
             setCountDownClock(calculateUsingStaticDate());
+            setCountDownCounter(9999);
         },
         dataType: 'html'
     });
