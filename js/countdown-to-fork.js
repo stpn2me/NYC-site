@@ -56,7 +56,7 @@
                 setCountDownClock(calculateUsingStaticDate());
             } else {
                 var blocksToGo = forkHeight - currentBlockHeight;
-                var secondsToGo = blocksToGo * 30;
+                var secondsToGo = Math.abs(blocksToGo * 30);
 
                 setCountDownClock(secondsToGo);
                 setCountDownCounter(blocksToGo);
@@ -65,7 +65,7 @@
         error: function() {
             console.log("falling back to hard coded fork date");
             setCountDownClock(calculateUsingStaticDate());
-            setCountDownCounter(9999);
+            setCountDownCounter(-999);
         },
         dataType: 'html'
     });
