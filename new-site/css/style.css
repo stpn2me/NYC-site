@@ -823,12 +823,6 @@ span.link-box__icon {
 
 /* Mobile friendly images */
 
-img {
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
-}
-
 .centerImg {
     margin-left: auto;
     margin-right: auto;
