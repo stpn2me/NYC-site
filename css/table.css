@@ -1,0 +1,124 @@
+/*
+.progress-table-wrap{overflow-x:scroll}.progress-table{background:#f9f9ff;padding:15px 0px 30px 0px;min-width:800px}.progress-table .serial{width:11.83%;padding-left:30px}.progress-table .country{width:28.07%}.progress-table .visit{width:19.74%}.progress-table .percentage{width:40.36%;padding-right:50px}.progress-table .table-head{display:flex}.progress-table .table-head .serial,.progress-table .table-head .country,.progress-table .table-head .visit,.progress-table .table-head .percentage{color:#222;line-height:40px;text-transform:uppercase;font-weight:500}.progress-table .table-row{padding:15px 0;border-top:1px solid #edf3fd;display:flex}.progress-table .table-row .serial,.progress-table .table-row .country,.progress-table .table-row .visit,.progress-table .table-row .percentage{display:flex;align-items:center}.progress-table .table-row .country img{margin-right:15px}.progress-table .table-row .percentage .progress{width:80%;border-radius:0px;background:transparent}.progress-table .table-row .percentage .progress .progress-bar{height:5px;line-height:5px}.progress-table .table-row .percentage .progress .progress-bar.color-1{background-color:#6382e6}.progress-table .table-row .percentage .progress .progress-bar.color-2{background-color:#e66686}.progress-table .table-row .percentage .progress .progress-bar.color-3{background-color:#f09359}.progress-table .table-row .percentage .progress .progress-bar.color-4{background-color:#73fbaf}.progress-table .table-row .percentage .progress .progress-bar.color-5{background-color:#73fbaf}.progress-table .table-row .percentage .progress .progress-bar.color-6{background-color:#6382e6}.progress-table .table-row .percentage .progress .progress-bar.color-7{background-color:#a367e7}.progress-table .table-row .percentage .progress .progress-bar.color-8{background-color:#e66686}.single-gallery-image{margin-top:30px;background-repeat:no-repeat !important;background-position:center center !important;background-size:cover !important;height:200px}.list-style{width:14px;height:14px}.unordered-list li{position:relative;padding-left:30px;line-height:1.82em !important}.unordered-list li:before{content:"";position:absolute;width:14px;height:14px;border:3px solid #f53f51;background:#fff;top:4px;left:0;border-radius:50%}.ordered-list{margin-left:30px}.ordered-list li{list-style-type:decimal-leading-zero;color:#f53f51;font-weight:500;line-height:1.82em !important}.ordered-list li span{font-weight:300;color:#777}.ordered-list-alpha li{margin-left:30px;list-style-type:lower-alpha;color:#f53f51;font-weight:500;line-height:1.82em !important}.ordered-list-alpha li span{font-weight:300;color:#777}.ordered-list-roman li{margin-left:30px;list-style-type:lower-roman;color:#f53f51;font-weight:500;line-height:1.82em !important}.ordered-list-roman li span{font-weight:300;color:#777}
+*/
+
+
+/*
+*
+* Tables custom
+*/
+.table {
+	text-align: left;
+	background: #fff;
+	border-collapse: collapse;
+}
+
+.table tr {
+	transition: .5s;
+}
+
+.table th,
+.table td {
+	color: #0f75bc;
+	background: #fff;
+}
+
+.table th {
+	padding: 35px 24px;
+	font-family: "Titillium Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: .05em;
+	background: #ebebeb;
+	white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+	.table th {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.table td {
+	padding: 17px 24px;
+	background-color: transparent;
+}
+
+.table tbody tr:first-child td {
+	border-top: 0;
+}
+
+.table tr td {
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.table tfoot td {
+	font-weight: 700;
+}
+
+* + .table-responsive {
+	margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+	* + .table-responsive {
+		margin-top: 40px;
+	}
+}
+
+.table.table-primary thead th {
+	color: #fff;
+	background: #0f75bc;
+	border: 0;
+}
+
+.table.table-primary tbody tr:hover {
+	background: #f6f6f6;
+}
+
+.table.table-gray-700 thead th {
+	color: #fff;
+	background: #0f75bc;
+	border: 0;
+}
+
+.table.table-gray-700 tbody tr:hover {
+	background: #f6f6f6;
+}
+
+.table.table-bordered tr td:first-child {
+	border-left: 0;
+}
+
+.table.table-bordered tr td:last-child {
+	border-right: 0;
+}
+
+.table.table-bordered td {
+	border: 1px solid #f6f6f6;
+}
+
+.table.table-bordered tbody > tr:first-of-type > td {
+	border-top: 0;
+}
+
+.table.table-striped {
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+	background: transparent;
+}
+
+.table.table-striped tbody tr:nth-of-type(even) {
+	background: #f6f6f6;
+}
+
+.table.table-striped tbody td {
+	border: 0;
+}
+
+.table.table-striped tfoot td:not(:first-child) {
+	border-left: 0;
+}

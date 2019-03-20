@@ -1,288 +1,448 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>NewYork Coin Community Website</title>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Road Map</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+<!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+<!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,700%7CTitillium+Web:300,400,700,900%7CMontserrat:400,700">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+<!-- majority on this one -->   
+    <link rel="stylesheet" href="css/timeline.css">
+<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+ </head>
+  <body>
+    <div class="preloader">
+        <div class="loader-wrapper">
+          <div class="loader"></div>
+        </div>
+    </div>
+<div class="page">
+<!-- Page Header-->
+      <header class="section page-header">
+<!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="40px" data-xl-stick-up-offset="40px" data-xxl-stick-up-offset="40px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main">
+<!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+<!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-outer"><span></span></button>
+<!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="/"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                </div>
+<!-- RD Sidebar -->
+                <div class="rd-sidebar">
+                  <button class="rd-sidebar__button" data-rd-navbar-toggle="#rd-sidebar__list">
+                    <svg class="rd-sidebar__shape" version="1.1" x="0px" y="0px" width="28px" height="27px" viewbox="0 0 28 27">
+                      <path d="M10,7c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V7z"></path>
+                      <path d="M28,7c0,1.657-1.343,3-3,3h-4c-1.657,0-3-1.343-3-3V3c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V7z"></path>
+                      <path d="M10,24c0,1.657-1.343,3-3,3H3c-1.657,0-3-1.343-3-3v-4c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V24z"></path>
+                      <path d="M28,24c0,1.657-1.343,3-3,3h-4c-1.657,0-3-1.343-3-3v-4c0-1.657,1.343-3,3-3h4c1.657,0,3,1.343,3,3V24z"></path>
+                    </svg>
+                  </button>
+                  <ul class="rd-sidebar__list context-dark" id="rd-sidebar__list">
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-laptop-phone"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="wallet">Download Wallet</a></div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-bubble-dots"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="https://discord.gg/fcUEGqm" target="_blank">Support</a></div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-envelope"></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="contacts">Contact Us</a></div>
+                      </div>
+                    </li>
+                    <li class="rd-sidebar__list-item">
+                      <div class="rd-sidebar__list-item-inner">
+                        <div class="icon rd-sidebar__list-item-icon linearicons-share2"></div>
+                        <div class="rd-sidebar__list-item-main">
+                          <ul class="list-inline list-inline-xs">
+                            <li><a class="icon icon-md link-light mdi mdi-facebook" href="https://www.facebook.com/NYCoin-1993078430944101/" target="_blank"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-twitter" href="https://twitter.com/nycoincommunity" target="_blank"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-youtube" href="https://www.youtube.com/c/nycoincommunity/" target="_blank"></a></li>
+                            <li><a class="icon icon-md link-light mdi mdi-instagram" href="https://www.instagram.com/nycoincommunity/" target="_blank"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rd-navbar-nav-outer">
+<!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about">About us</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="wallet">Wallets</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Support NYC</a>
+<!-- RD Navbar Dropdown-->
+                    <ul class="rd-menu rd-navbar-dropdown">
+                      <!--					  
+					  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="merchants">Merchants</a></li>
+-->
+					  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://www.nycoinstores.com/" target="_blank" >Merchants</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="guide">Run a Full Node</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" data-toggle="modal" href="#modal-mining-pool">Mining Pools</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="exchanges">Buy NewYorkCoin</a></li>
+                      <!--					  
+					     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/shop">NYC Merchandise</a></li>
+-->
+                    </ul>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Network</a>
+<!-- RD Navbar Dropdown-->
+                    <ul class="rd-menu rd-navbar-dropdown">
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://explorer.nycoin.community" target="_blank">Explorer</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="nodes">Nodes</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://stats.nycoin.info" target="_blank">Stats</a></li>
+                    </ul>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="donate">Donate</a>
+<!-- RD Navbar Dropdown -->
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="roadmap">Roadmap</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="faq">FAQ</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+  
+<!-- Countdown-->
+   <section class="bg-image section-md section-overlay-5 context-dark text-center" style="background-image: url(images/digital-roadmap.jpg);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-xl-9">
+              <h3>Countdown</h3>
+              <h6>Until Next Block Reward Halving</h6>
+              <!-- TimeCircles-->
+              <div class="DateCountdown" data-type="until" data-date="2018-11-25 00:00:00" data-format="wdhms" data-color="#007EFF" data-bg="rgba(255, 255, 255, .2)" data-width="0.02"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- Bootstrap CSS -->
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="icon" href="img/logo.gif" alt="Bitcoin New York">
+<!-- Skill Bars-->
+      <section class="section section-md bg-default text-left">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+            <h2 class="text-center text-blue">Roadmap Timeline</h2>
+            <p>Our development team is comprised of community members volunteering their time to execute this roadmap. Ideas are shared openly among the community and strategy is determined through consensus of the development team.</p></div>
+          </div><br><br>
+          
+        <div class="cryptronick_module_time_line_vertical appear_anim"><div id="time_line_darkblue" class="time_line-item item_active item_show"><div class="time_line-date_wrap"><div class="time_line-check"><i class="flaticon-mark-1"></i></div>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-119486571-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+<!-- 2018 -->
+            <h4 class="time_line-date">2018</h4></div><div class="time_line-content"><h5 class="time_line-title"></h5><div class="time_line-descr">
 
-			gtag('config', 'UA-119486571-1');
-		</script>
+            <p class="quote-classic__info">Q1</p>                   
 
-	</head>
-	<body>
+              <ul class="list-marked">
+                <li>On-board merchants to accept NYC for goods and services</li>
+                <li>Implement wallet updates</li>
+                <li>Audit current source code</li>
+              </ul><br><hr>
 
-		<div id="preloader">
-			<div class="loader">Loading...</div>
-		</div>
+            <p class="quote-classic__info">Q2</p>                   
 
-		<section>
+              <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>Build a lightweight wallet, eg electrum.</li>
+              </ul><br><hr>
 
-			<div class="header" style="position: relative; max-height: 500px;">
-				<div class="header-overlay " style="position: relative; max-height: 500px;" ">
-					<!-- Navbar (Bootstrap) -->
-					<nav class="navbar navbar-default navbar-fixed-top navbar-padding navbar-default-black-bg">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<a type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="fa fa-bars"></span>
+            <p class="quote-classic__info">Q3</p>
+                <ul class="list-marked">
+                <li>Continue to on-board merchants</li>            
+                <li>Construct an inflation-reduction plan</li>
+                <li>Performing a blockchain threat analysis</li> 
+              </ul><br><hr>
 
-							</a>
-							<!-- Logo -->
-							<a class="navbar-brand" href="index.html" style="display: inline-block;">
-								<span style="display: inline-block;"><img src="img/logo.png" id="logo" alt="logo" class="img-responsive logo"></span>
-								<span class=" menu-color logo-text" style="display: inline-block;">
-									New York Coin
-								</span>
-							</a>
+            <p class="quote-classic__info">Q4</p>
+                <ul class="list-marked"> 
+                <li>Continue to on-board merchants</li>             
+                <li>Implement a hard fork (security) at block 4,800,000</li>
+                <li>Build a newyorkcj or comparable bitcoinj library</li> 
+              </ul><br><hr>
 
-						</div>
+          </div></div></div>
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse navbar-ex1-collapse">
+      <div id="time_line_logoblue" class="time_line-item item_active item_show"><div class="time_line-date_wrap"><div class="time_line-check"><i class="flaticon-mark-1"></i></div>
 
-							<ul class="nav navbar-nav navbar-right">
 
-								<li >
-									<a href="index.html" class="menu-color">Home</a>
-								</li>
+<!-- 2019 -->
+          <h4 class="time_line-date">2019</h4></div><div class="time_line-content"><h5 class="time_line-title"></h5><div class="time_line-descr">
 
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
 
-					</nav>
-					<!-- end of nabvar (Bootstrap) -->
+          <p class="quote-classic__info">Q1</p>                   
 
-					<div class="title-wrap">
-						<div class="center-title text-center">
+              <ul class="list-marked">
+                <li>On-board merchants to accept NYC for goods and services</li>
+                <li>Launch new Community Website</li>
+                <li>Partner with existing and future altcoin merchant payment solutions to ease NYC adoption friction</li>
+                <li>Update NYC source code to introduce: SegWit and support for Lightning Network.</li>
+                <li>Explore atomic swap on-chain capabilities on mainet</li>
+              </ul><br><hr>
 
-							<h1>New York Coin</h1>
+          <p class="quote-classic__info">Q2</p>                   
 
-							<h2>ROADMAP</h2>
-							<div class="col-lg-12  as-header">
+              <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>Implement support for smart contracts through Merklized Abstract Syntax Tree (“MAST”)</li>
+                <li>Develop proprietary merchant integration solution</li>
+              </ul><br><hr>
 
-								<!-- <h3>Download wallet:</h3> <ul> <li><a href="#"><i class="fa fa-windows"><span>Windows</span></i></a></li> <li><a href="#"><i class="fa fa-apple"><span>MAC</span></i></a></li> <li><a href="#"><i class="fa
-								fa-linux"><span>Ubuntu</span></i></a></li> </ul> <ul class="text-center"> <li><a href="#" class="more"><i class="fa fa-apple"><span>IOS</span></i> <span class="coinomi-span">( coming soon )</span></a></li> <li><a href="#" class="more"><i class="fa
-								fa-android"><span>Android</span></i><span class="coinomi-span">( coinomi app )</span></a></li> </ul> -->
+          <p class="quote-classic__info">Q3</p>
+                <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li>
+              </ul><br><hr>
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+          <p class="quote-classic__info">Q4</p>
+                <ul class="list-marked"> 
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li> 
+              </ul><br><hr>
 
-		</section>
+        </div></div></div>
 
-		<section class="roadmap">
-			<div class="col-lg-7 center-block" style="float: none;">
-				<h2 class="text-center">Technical &amp; Community Roadmap</h2>
 
-				<p class="">Our development team is comprised of community members volunteering their time to execute this roadmap. Ideas are shared openly among the community and strategy is determined through consensus of the development team.</p>
+        <div id="time_line_brightblue" class="time_line-item item_active item_show"><div class="time_line-date_wrap"><div class="time_line-check"><i class="flaticon-mark-1"></i></div>
 
-				<h3>2018 Goals:</h3>
-				<h4>Q1:</h4>
 
-				<del>
-					<ul>
-						<li>On-board domestic and foreign merchants to accept NewYorkCoin for goods and services.</li>
-						<li>Implementing NewYorkCoin wallet updates:
-							<ul>
-								<li>Updating newyorkc-qt wallet code to remove unnecessary alert systems.</li>
-								<li>Removing errant code lines which inadvertently trigger anti-virus alarms.</li>
-							</ul>
-						</li>
+<!-- 2020 -->
+            <h4 class="time_line-date">2020</h4></div><div class="time_line-content"><h5 class="time_line-title"></h5><div class="time_line-descr">
 
-						<li>Auditing current NewYorkCoin source code:
-							<ul>
-								<li>Progress can be tracked at
-									<a href="https://github.com/NewYorkCoin-NYC">https://github.com/NewYorkCoin-NYC</a>.
-								</li>
-							</ul>
 
-						</li>
+            <p class="quote-classic__info">Q1</p>                   
 
-					</ul>
-				</del>
+              <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li>
+              </ul><br><hr>
 
-				<h4>Q2 / Q3:</h4>
-        <del>
-				<ul>
-					<li>Continue to on-board domestic and foreign merchants to accept NewYorkCoin for goods and services.</li>
-					<del>
-						<li>Building a lightweight wallet to co-exist with the full node, eg electrum.</li>
-					</del>
-          <li>Constructing a NewYorkCoin inflation-reduction plan in order to balance the need to maintain zero or near-zero transaction fees while adequately incentivizing miners to solve blocks on the NewYorkCoin blockchain.</li>
+            <p class="quote-classic__info">Q2</p>                   
 
-					<li>Performing NewYorkCoin blockchain threat analysis and developing patches to improve resistance to 51% attacks, such as:
-						<ul>
-							<li><a href="https://www.coindesk.com/feathercoin-secures-block-chain-advanced-check-pointing/" target="_blank">Advanced Checkpointing</a></li>
-              <li><a href="https://bitcointalk.org/index.php?topic=526721.0" target="_blank">Digishield</a></li>
-              <li><a href="https://en.bitcoin.it/wiki/Merged_mining_specification" target="_blank">Merged Mining</a></li>
-						</ul>
-            <blockquote><small><i>These changes, which have been deemed necessary by the development team for the longevity and security of NYCoin, will require a hard fork in the near future.</i></small></blockquote>
-					</li>
+              <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li>
+              </ul><br><hr>
 
-				</li>
-			</ul>
-    </del>
-			<h4>Q4:</h4>
+            <p class="quote-classic__info">Q3</p>
+                <ul class="list-marked">
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li>
+              </ul><br><hr>
 
-			<ul>
-        <li>Development: NewYorkCoin hard fork took place on October 28th. With this hard fork, triggered on block <a href="https://explorer.nycoin.info/block/0fa207a7936358d6424ceabb49021f552fe8722ebfb68b285023aa3e5bff8e4e" target="_blank">4,800,000</a>, the following was implemented:
-          <ul>
-            <li>The old Kimito Gravity Well was replaced by Digishield as a Difficulty Algorythm: Digishield adjusts the difficulty on the chain for finding new blocks in a better way to maintain the 30sec bock time.</li>
-            <li>Merged Mining (AuxPoW): allows mining pools to mine NYCoin together with other coins on their mining pool infrastructure.</li>
-          </ul>
-        </li>
-        <li>Development: Further optimisation of the NewYorkCoin core code to stabilize the network and security of the coin:
-          <ul>
-            <li><a href="https://www.coindesk.com/feathercoin-secures-block-chain-advanced-check-pointing/" target="_blank">Advanced Checkpointing</a> (not yet fully implemented in the previous codebase updates)</li>
-            <li>Updating QT Wallet dependencies like LevelDB and BerkeleyDB</li>
-            <li>Improve performance: Lower the memory utilisation, improve blockchain synchronisation speed.</li>
-          </ul>
-        </li>
-				<li>Development: (Re)Building a lightweight wallet to co-exist with the full node, eg electrum, to work with Digishield/MergedMining.
-        </li>
-				<li>Development: Building a newyorkcj or comparable
-					<a href="https://bitcoinj.github.io/" target="_blank">bitcoinj</a>
-					library to achieve the following:
-					<ul>
-						<li>Multiplatform mobile and desktop wallets,</li>
-						<li>
-							<a href="https://bitteller.io/" target="_blank">BitTeller®</a>
-							ATMs at various NewYorkCoin community merchants’ locations.</li>
-					</ul>
-          <li>Marketing: Continue to on-board domestic and foreign merchants to accept NewYorkCoin for goods and services.</li>
-          <li>Marketing: Focus on listing on top exchanges on Coinmarketcap, including a DEX.</li>
-			</ul>
+            <p class="quote-classic__info">Q4</p>
+                <ul class="list-marked"> 
+                <li>Continue to on-board merchants</li>
+                <li>ABC</li>
+                <li>123</li> 
+              </ul><br><hr>
 
-			<h3>2019 Goals:</h3>
-			<h4>Q1:</h4>
+        </div></div></div>
+      </section>
 
-			<ul>
-				<li>Continue to on-board domestic and foreign merchants to accept NewYorkCoin for goods and services.</li>
-				<li>Partner with existing and future altcoin merchant payment solutions to ease NewYorkCoin adoption friction.</li>
-				<li>Updating NewYorkCoin source code to introduce:
-					<a href="https://segwit.org/" target="_blank">SegWit</a> and future support for the
-					<a href="https://segwit.org/lightning-channels-segwit-inside-d2cbbaefc3ac" target="_blank">Lightning Network</a>.
-				</li>
-				<li>Exploring<a href="https://bitcointechtalk.com/atomic-swaps-d6ca26b680fe" target="_blank">atomic swap</a> on-chain capabilities on the main network.</li>
+<!-- Page Footer-->
+      <footer class="section footer-classic context-dark">
+        <div class="container">
+          <div class="footer-classic__main">
+            <div class="row row-50">
+              <div class="col-lg-6">
+                <div class="unit unit-spacing-sm flex-column flex-sm-row align-items-sm-center">
+                  <div class="unit-left"><a class="brand" href="/"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                  </div>
+                  <div class="unit-body">
+                    <p><span style="max-width: 380px;">NewYorkCoin is a lightning fast cryptocurrency with growing worldwide retail acceptance.</span></p>
+                  </div>
+                </div>
+                <div class="group group-lg group-middle">
+                  <p class="large">Connect with Community</p>
+                  <div class="group-item">
+                    <ul class="list-inline list-inline-sm">
+                      <li><a class="icon icon-lg link-default mdi mdi-facebook" href="https://www.facebook.com/NYCoin-1993078430944101/" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-twitter" href="https://twitter.com/nycoincommunity" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-youtube" href="https://www.youtube.com/c/nycoincommunity/" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-instagram" href="https://www.instagram.com/nycoincommunity/" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-telegram" href="https://t.me/NewYorkCoinNYC" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-discord" href="https://discord.gg/fcUEGqm" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-reddit" href="https://www.reddit.com/r/nycoincommunity/" target="_blank"></a></li>
+                      <li><a class="icon icon-lg link-default mdi mdi-github-circle" href="https://github.com/orgs/NewYorkCoin-NYC/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-inset-3">
+                  <h4>Sign Up for Our Newsletter</h4>
+<!-- Mailchimp-->
+              <form class="form mailchimp-mailform form-inline" data-form-output="form-output-global" action="https://community.us19.list-manage.com/subscribe/post?u=aac15c884b19abeef218bd2a8&id=cc0abd62e9" method="post">
+                <div class="form-wrap">
+                  <label class="form-label" for="mailchimp-email">Enter your e-mail</label>
+                  <input class="form-input" id="mailchimp-email" type="email" name="email" data-constraints="@Email @Required">
+                </div>
+                <div class="form-button">
+                  <button class="button button-color-2" type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-classic__aside">
+            <div class="list-wrap">
+              <ul class="list-nav">
+                <li><a href="about">About</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="https://blog.nycoin.community/">Blog</a></li>
+                <li><a href="https://explorer.nycoin.community/" target="_blank">Block Explorer</a></li>
+                <li><a href="contacts">Contacts</a></li>
+                <li><a href="donate">Donate</a></li>
+<!--        <li>
+                  <button data-toggle="modal" data-target="#modal-login-register">Sign In</button>
+            </li>
+--> 
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <ul class="list-bordered">
+                <li>
+<!-- Copyright-->
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>NewYorkCoin</span><span>.&nbsp;</span>All Rights Reserved</p>
+                </li>
+         <!--       <li><a href="mailto:#">contact@nycoin.community</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-			</ul>
-			<h4>Q2:</h4>
+    </div>
+<!-- Modal Login/Register-->
+    <div class="modal modal-login-register fade" id="modal-login-register" tabindex="-1" role="dialog" aria-labelledby="modal-login-register-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="font-weight-bold modal-title" id="modal-login-register-label">Login Form</h2>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="group-sm group-sm-justify"><a class="button button-sm button-facebook button-icon button-icon-left" href="#"><span class="icon fa fa-facebook"></span>Facebook</a><a class="button button-sm button-twitter button-icon button-icon-left" href="#"><span class="icon fa fa-twitter"></span>Twitter</a><a class="button button-sm button-google button-icon button-icon-left" href="#"><span class="icon fa fa-google-plus"></span>Google+</a></div>
+            <p class="text-uppercase">or</p>
+<!-- RD Mailform-->
+            <form class="form rd-mailform form-centered">
+              <div class="form-wrap">
+                <input class="form-input" id="popup-form-login-email" type="email" name="email" data-constraints="@Email @Required">
+                <label class="form-label" for="popup-form-login-email">E-mail</label>
+              </div>
+              <div class="form-wrap">
+                <input class="form-input" id="popup-form-login-password" type="password" name="password" data-constraints="@Required">
+                <label class="form-label" for="popup-form-login-password">Password</label>
+              </div>
+              <div class="form-wrap">
+                <label class="checkbox-inline">
+                  <input name="checkbox" value="checkbox-1" type="checkbox" checked>Remember me 
+                </label>
+              </div>
+              <div class="group"> 
+                <button class="button button-primary" type="submit">Login</button>
+                <button class="button button-default-outline">Create an Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>         
 
-			<ul>
-				<li>Continue to on-board domestic and foreign merchants to accept NewYorkCoin for goods and services.</li>
-				<li>Implementing support for
-					<a href="https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f">smart contracts through Merklized Abstract Syntax Tree (“MAST”)</a>
-					as proposed by the Bitcoin community.</li>
+<!-- Modal Mining Pools-->
+    <div class="modal modal-mining-pool fade" id="modal-mining-pool" tabindex="" role="" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="text-blue">Mining Pools</h2>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+         <!-- Icon List-->
+      <section class="section section-md bg-default">
+        <div class="container">       
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <!-- Link Box--><a class="link-box" href="https://hobbyistpool.ddns.net/nyc/" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
+                <div class="link-box__main">
+                  <h5>Hobbyist &nbsp;&nbsp;&nbsp;</h5>            
+                </div></a>
+            </div>
+            <div class="col-lg-6">
+              <!-- Link Box--><a class="link-box" href="https://newyorkcoin.mastermining.net/index.php?page=statistics&action=pool" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
+                <div class="link-box__main">
+                  <h5>Master Mining</h5>  
+                </div></a>
+            </div>
+            <div class="col-lg-6">
+              <!-- Link Box--><a class="link-box" href="https://www.mining-dutch.nl/pools/newyorkcoin.php?page=statistics&action=pool" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
+                <div class="link-box__main">
+                  <h5>Mining Dutch &nbsp;&nbsp;&nbsp;</h5> 
+                </div></a>
+            </div>
+            <div class="col-lg-6">
+              <!-- Link Box--><a class="link-box"><span class="icon link-box__icon linearicons-pickaxe"></span>
+                <div class="link-box__main">
+                  <h5>Mining Pool 4</h5> 
+                </div></a>
+             </div>
+            </div>
+          </div>        
+      </section>
+    </div>
+  </div>
+ </div>
+</div>
 
-				<li>Develop proprietary NewYorkCoin merchant integration solution.</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="footer text-center" style="overflow: auto; background-color: #212121">
-
-		<div class="col-lg-12" style="overflow: auto;">
-			<div class="col-lg-6 com-md-6 col-sm 6">
-				<h4>Social</h4>
-				<ul>
-					<li>
-						<a href="https://www.facebook.com/NewYorkCoinCommunity/">
-							<i class="fa fa-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/nycoincommunity">
-							<i class="fa fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="hhttps://www.reddit.com/r/nycoincommunity/">
-							<i class="fa fa-reddit"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/nycoincommunity/">
-							<i class="fa fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.meetup.com/BTC-NYC/">
-							<i class="fa fa-meetup" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/orgs/NewYorkCoin-NYC/">
-							<i class="fa fa-github"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://discord.gg/qRtkD8q" title="">
-							<i class="fab fa-discord"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/c/nycoincommunity/" title="">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</li>
-
-				</ul>
-			</div>
-
-			<div class="col-lg-6 com-md-6 col-sm 6">
-				<h4>Contact:</h4>
-				<ul>
-					<li>
-						<i class="fas fa-envelope" style="color: #fff;"></i>
-						<a href="mailto:contact@nycoin.community">contact@nycoin.community</a>
-					</li>
-
-				</ul>
-			</div>
-
-			<div class="col-lg-12 text-center" id="contact">
-				<p>Copyright 2018. New York Coin. All rights reserved</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- jQuery -->
-	<script src="//code.jquery.com/jquery.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-	<script src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js"></script>
-	<script type="text/javascript" src="js/SmoothScroll.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-</html>
+<!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+<!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://widgets.bitcoin.com/widget.js"></script>    
+  </body>
+</html> 
