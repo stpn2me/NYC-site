@@ -1790,7 +1790,7 @@
 			var s = document.createElement("script");
 			s.type = "text/javascript";
 			s.async = true;
-			var theUrl = baseUrl + 'serve/v2/coin/header?fsyms=NYC,BTC,XRP,ETH,BCH,EOS,XLM,USDT,LTC,TRX,BSV&tsyms=USD';
+			var theUrl = baseUrl + 'serve/v2/coin/header?fsyms=NYC,BTC,ETH,XRP,EOS,LTC,BCH,USDT,XLM,TRX,BNB&tsyms=USD';
 			s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
 			embedder.appendChild(s);
 		})();

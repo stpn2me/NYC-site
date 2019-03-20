@@ -7265,7 +7265,7 @@ html:not(.lt-ie10) .not-animated {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 9999999;
+/*	z-index: 9999999; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -7329,6 +7329,88 @@ html:not(.lt-ie10) .not-animated {
 		transform: translateY(-100px) rotate(45deg) scale(0);
 	}
 }
+
+
+/*
+*
+* Preloader - loader-wrapper
+*/
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #6d6e71;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #0f75bc;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #007EFF;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
 
 /*
 *
@@ -10309,7 +10391,7 @@ html.rd-navbar-fixed-linked .page {
 .progress-linear .progress-bar-linear {
 	width: 0;
 	height: inherit;
-	background: #ffae00;
+	background: #007eff;
 	transition: .5s all ease-in-out;
 }
 
@@ -11901,49 +11983,35 @@ html .nycwdgt-chart .nycwdgt-header h2 {
 }
 
 /* mining pool pop-up*/
-.modal-mining-pool-register .modal-content {
+.modal-mining-pool .modal-content {
 	position: relative;
 	padding: 30px 20px;
 }
 
-.modal-mining-pool-register .modal-header {
+.modal-mining-pool .modal-header {
 	padding-right: 40px;
 }
 
-.modal-mining-pool-register .close {
+.modal-mining-pool .close {
 	position: absolute;
 	right: 20px;
 	top: 30px;
 }
 
-.modal-mining-pool-register * + p {
+.modal-mining-pool * + p {
 	margin-top: 20px;
 }
 
-.modal-mining-pool-register * + .form {
-	margin-top: 20px;
-}
 
-.modal-mining-pool-register * + .modal-body {
+.modal-mining-pool * + .modal-body {
 	margin-top: 27px;
 }
 
-@media (max-width: 575px) {
-	.modal-mining-pool-register form .group {
-		margin-left: 0;
-	}
-	.modal-mining-pool-register form .group .button {
-		display: block;
-		width: 100%;
-		margin-left: 0;
-	}
-}
-
 @media (min-width: 768px) {
-	.modal-mining-pool-register .modal-content {
+	.modal-mining-pool .modal-content {
 		padding: 50px 40px 50px;
 	}
-	.modal-mining-pool-register .close {
+	.modal-mining-pool .close {
 		top: 40px;
 		right: 40px;
 		font-size: 28px;
@@ -11951,10 +12019,14 @@ html .nycwdgt-chart .nycwdgt-header h2 {
 }
 
 @media (min-width: 1200px) {
-	.modal-mining-pool-register .modal-content {
+	.modal-mining-pool .modal-content {
 		padding-top: 75px;
 	}
 }
+
+
+
+
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
  *

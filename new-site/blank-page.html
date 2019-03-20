@@ -24,18 +24,14 @@
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
-  </head>
+ </head>
   <body>
     <div class="preloader">
-      <div class="preloader-body">
-        <div class="preloader-item">
-          <div class="diamond"></div>
-          <div class="diamond"></div>
-          <div class="diamond"></div>
+        <div class="loader-wrapper">
+          <div class="loader"></div>
         </div>
-      </div>
     </div>
-    <div class="page">
+<div class="page">
 <!-- Page Header-->
       <header class="section page-header">
 <!-- RD Navbar-->
@@ -47,7 +43,7 @@
 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-outer"><span></span></button>
 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                <div class="rd-navbar-brand"><a class="brand" href="/"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
                 </div>
 <!-- RD Sidebar -->
                 <div class="rd-sidebar">
@@ -63,7 +59,7 @@
                     <li class="rd-sidebar__list-item">
                       <div class="rd-sidebar__list-item-inner">
                         <div class="icon rd-sidebar__list-item-icon linearicons-laptop-phone"></div>
-                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="wallet.html">Download Wallet</a></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="wallet">Download Wallet</a></div>
                       </div>
                     </li>
                     <li class="rd-sidebar__list-item">
@@ -75,7 +71,7 @@
                     <li class="rd-sidebar__list-item">
                       <div class="rd-sidebar__list-item-inner">
                         <div class="icon rd-sidebar__list-item-icon linearicons-envelope"></div>
-                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="contacts.html">Contact Us</a></div>
+                        <div class="rd-sidebar__list-item-main"><a class="rd-sidebar__list-item-link" href="contacts">Contact Us</a></div>
                       </div>
                     </li>
                     <li class="rd-sidebar__list-item">
@@ -97,36 +93,41 @@
               <div class="rd-navbar-nav-outer">
 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about">About us</a>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="wallet.html">Wallets</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="wallet">Wallets</a>
                   </li>
                   <li class="rd-nav-item"><a class="rd-nav-link" href="#">Support NYC</a>
 <!-- RD Navbar Dropdown-->
                     <ul class="rd-menu rd-navbar-dropdown">
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="merchants.html">Merchants</a></li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="guide.html">Run a Full Node</a></li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" data-toggle="modal" href="#modal-mining-pool-register">Mining Pools</a></li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="exchanges.html">Buy NewYorkCoin</a></li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/shop">NYC Merchandise</a></li>
+                      <!--					  
+					  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="merchants">Merchants</a></li>
+-->
+					  <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://www.nycoinstores.com/" target="_blank" >Merchants</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="guide">Run a Full Node</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" data-toggle="modal" href="#modal-mining-pool">Mining Pools</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="exchanges">Buy NewYorkCoin</a></li>
+                      <!--					  
+					     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/shop">NYC Merchandise</a></li>
+-->
                     </ul>
                   </li>
                   <li class="rd-nav-item"><a class="rd-nav-link" href="#">Network</a>
 <!-- RD Navbar Dropdown-->
                     <ul class="rd-menu rd-navbar-dropdown">
                       <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://explorer.nycoin.community" target="_blank">Explorer</a></li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="nodes.html">Nodes</a></li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="nodes">Nodes</a></li>
                       <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://stats.nycoin.info" target="_blank">Stats</a></li>
                     </ul>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="news-post.html">News</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="donate">Donate</a>
 <!-- RD Navbar Dropdown -->
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="roadmap.html">Roadmap</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="roadmap">Roadmap</a>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="faq.html">FAQ</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="faq">FAQ</a>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts">Contacts</a>
                   </li>
                 </ul>
               </div>
@@ -149,7 +150,7 @@
             <div class="row row-50">
               <div class="col-lg-6">
                 <div class="unit unit-spacing-sm flex-column flex-sm-row align-items-sm-center">
-                  <div class="unit-left"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
+                  <div class="unit-left"><a class="brand" href="/"><img class="brand-logo-dark" src="images/logo-default-125x45.png" alt="" width="125" height="45" srcset="images/logo-default-210x76.png 2x"/><img class="brand-logo-light" src="images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="images/logo-inverse-210x76.png 2x"/></a>
                   </div>
                   <div class="unit-body">
                     <p><span style="max-width: 380px;">NewYorkCoin is a lightning fast cryptocurrency with growing worldwide retail acceptance.</span></p>
@@ -175,7 +176,7 @@
                 <div class="box-inset-3">
                   <h4>Sign Up for Our Newsletter</h4>
 <!-- Mailchimp-->
-              <form class="form mailchimp-mailform form-inline" data-form-output="form-output-global" action="https://nycnodes.us19.list-manage.com/subscribe/post?u=66d48938ae43752a8ea626dff&id=eed30907f6" method="post">
+              <form class="form mailchimp-mailform form-inline" data-form-output="form-output-global" action="https://community.us19.list-manage.com/subscribe/post?u=aac15c884b19abeef218bd2a8&id=cc0abd62e9" method="post">
                 <div class="form-wrap">
                   <label class="form-label" for="mailchimp-email">Enter your e-mail</label>
                   <input class="form-input" id="mailchimp-email" type="email" name="email" data-constraints="@Email @Required">
@@ -192,21 +193,23 @@
           <div class="footer-classic__aside">
             <div class="list-wrap">
               <ul class="list-nav">
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="news.html">News</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="https://blog.nycoin.community/">Blog</a></li>
                 <li><a href="https://explorer.nycoin.community/" target="_blank">Block Explorer</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li>
+                <li><a href="contacts">Contacts</a></li>
+                <li><a href="donate">Donate</a></li>
+<!--        <li>
                   <button data-toggle="modal" data-target="#modal-login-register">Sign In</button>
-                </li>
+            </li>
+--> 
               </ul>
             </div>
             <div class="list-wrap">
               <ul class="list-bordered">
                 <li>
 <!-- Copyright-->
-                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>NewYorkCoin</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>NewYorkCoin</span><span>.&nbsp;</span>All Rights Reserved</p>
                 </li>
          <!--       <li><a href="mailto:#">contact@nycoin.community</a></li> -->
               </ul>
@@ -253,11 +256,11 @@
     </div>         
 
 <!-- Modal Mining Pools-->
-    <div class="modal modal-mining-pool-register fade" id="modal-mining-pool-register" tabindex="-1" role="dialog" aria-labelledby="modal-mining-pool-register-label" aria-hidden="true">
+    <div class="modal modal-mining-pool fade" id="modal-mining-pool" tabindex="" role="" aria-labelledby="" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="text-blue" id="modal-login-register-label">Mining Pools</h2>
+            <h2 class="text-blue">Mining Pools</h2>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body text-center">
@@ -278,20 +281,24 @@
                 </div></a>
             </div>
             <div class="col-lg-6">
-              <!-- Link Box--><a class="link-box" href="http://nyc.mypool.club/" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
+              <!-- Link Box--><a class="link-box" href="https://www.mining-dutch.nl/pools/newyorkcoin.php?page=statistics&action=pool" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
                 <div class="link-box__main">
-                  <h5>MyPool &nbsp;&nbsp;&nbsp;</h5> 
+                  <h5>Mining Dutch &nbsp;&nbsp;&nbsp;</h5> 
                 </div></a>
             </div>
             <div class="col-lg-6">
-              <!-- Link Box--><a class="link-box" href="#" target="_blank"><span class="icon link-box__icon linearicons-pickaxe"></span>
+              <!-- Link Box--><a class="link-box"><span class="icon link-box__icon linearicons-pickaxe"></span>
                 <div class="link-box__main">
                   <h5>Mining Pool 4</h5> 
                 </div></a>
+             </div>
             </div>
-          </div>
           </div>        
       </section>
+    </div>
+  </div>
+ </div>
+</div>
 
 <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
