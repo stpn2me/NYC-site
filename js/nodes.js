@@ -50,8 +50,151 @@ $(document).ready(function () {
     ;
 
 
+// MARKETING Wallet Balance
+
+    getMarketingBalance();
+
+    setInterval(getMarketingBalance, 180 * 1000);
+
+    function getMarketingBalance() {
+
+        $.get("../_php/getMarketingBalance.php", function (data) {
+
+            $('.marketing-count').html(data);
+
+           $('.marketing-count').counterUp({
+
+              delay: 10,
+
+              time: 1000
+
+            });
+
+        });
+
+    }
+
+// MARKETING Wallet Balance PERCENTAGE
+
+    getMarketingBalancePercent();
+
+    setInterval(getMarketingBalancePercent, 180 * 1000);
+
+    function getMarketingBalancePercent() {
+
+        $.get("../_php/getMarketingBalancePercent.php", function (data) {
+
+            $('.marketing-percent-count').html(data);
+
+//           $('.marketing-percent-count').counterUp({
+
+//               delay: 10,
+
+//               time: 1000
+
+            });
+
+        };
+
+    
+
+ // EXCHANGE Wallet Balance
+
+    getExchBalance();
+
+    setInterval(getExchBalance, 180 * 1000);
+
+    function getExchBalance() {
+
+        $.get("../_php/getExchBalance.php", function (data) {
+
+            $('.exchange-count').html(data);
+
+//            $('.exchange-count').counterUp({
+
+//                delay: 10,
+
+//                time: 1000
+
+            });
+
+        };
+
+    
+
+// EXCHANGE Wallet Balance PERCENTAGE
+
+    getExchangeBalancePercent();
+
+    setInterval(getExchangeBalancePercent, 180 * 1000);
+
+    function getExchangeBalancePercent() {
+
+        $.get("../_php/getExchangeBalancePercent.php", function (data) {
+
+            $('.exchange-percent-count').html(data);
+
+//            $('.exchange-percent-count').counterUp({
+
+//                delay: 10,
+
+//                time: 1000
+
+            });
+
+        };
+
+       
+
+// DEVELOPMENT Wallet Balance
+
+    getDevBalance();
+
+    setInterval(getDevBalance, 180 * 1000);
+
+    function getDevBalance() {
+
+        $.get("../_php/getDevBalance.php", function (data) {
+
+            $('.dev-count').html(data);
+
+//            $('.dev-count').counterUp({
+
+//                delay: 10,
+
+//                time: 1000
+
+            });
+
+        };
+
+    
+
+// DEVELOPMENT Wallet Balance PERCENTAGE
+
+    getDevBalancePercent();
+
+    setInterval(getDevBalancePercent, 180 * 1000);
+
+    function getDevBalancePercent() {
+
+        $.get("../_php/getDevBalancePercent.php", function (data) {
+
+            $('.dev-percent-count').html(data);
+
+//            $('.dev-percent-count').counterUp({
+
+//                delay: 10,
+
+//                time: 1000
+
+            });
+
+        };
+
+       
   
-    // Nodes
+// Nodes
 
     getBlockDifficulty();
 
@@ -99,6 +242,7 @@ $(document).ready(function () {
     }
 
 
+
     getTopCountry();
 
     setInterval(getTopCountry, 120 * 1000);
@@ -126,55 +270,8 @@ $(document).ready(function () {
 
                     '       <div class="nodes">' + item.count + '</div>' +
 
-                    '       <div class="col-md-10 col-lg-6">' +
-                    '       <div class="progress-linear">' +
-                    '       <div class="progress-header">' +
-                    '       <span class="progress-value">' + item.count + '</span>' +
-                    '       </div>' +
-                    '       <div class="progress-bar-linear-wrap">' +
-                    '       <div class="progress-bar-linear">' + '</div>'+
-                    '       </div>' +
-                    '       </div>' +
                     '       </div>' +
                     '       </div>'
-
-
- //                   '       <div class="col-md-10 col-lg-6"><article class="progress-linear"><div class="progress-header"><p class="progress-title">' + item.country + '</p><span class="progress-value">' + item.count + '</span></div><div class="progress-bar-linear-wrap"><div class="progress-bar-linear"></div></div></article></div>' +
-                  
- //                   '       </div>'
- 
-              
-                
-               
-                
-                
-                  
-                
-// </div>'
-
-
-
-
-
-//                  '       <div class="col-md-10 col-lg-6 progress-linear"><div class="progress-header"><p></p><span class="progress-value">' + item.count + '</span></div><div class="progress-bar-linear-wrap"><div class="progress-bar-linear"></div></div></div>' + 
-
-//                  '       </div>' 
-                   
-
-//                    '       <div class="progress-linear"><div class="progress-header"><p></p><span class="progress-value">' + item.count + '</span>' + '</div>' +                    
-
- //                   '   <div class="progress-bar-linear-wrap"><div class="progress-bar-linear"></div></div></div>'
-
-
- //                   '       <div class="percentage">' + item.count + '</div>' +                    
-
- //                   '   </div>'
-
- //                   '       <div class="percentage"><div class="progress"><div class="percentage progress-bar color-4" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">' + item.count + '%' + '</div>' +                    
-
- //                   '   </div></div></div>'
-
-
 
 
             }

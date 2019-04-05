@@ -10396,15 +10396,27 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .progress-linear .progress-value {
-/*	font-weight: 700; */
-	font-size: 8px;
-	color: #0f75bc;
+	font-weight: 500;
+	font-size: 12px;
+	color: #007EFF;
 	letter-spacing: .05em;
 }
 
 .progress-linear .progress-value::after {
+	content: '\0025';
+}
+
+.progress-linear .progress-value-node {
+	font-weight: 500;
+	font-size: 12px;
+	color: #007EFF;
+	letter-spacing: .05em;
+}
+
+.progress-linear .progress-value-node::after {
 /*	content: '\0025'; */
 }
+
 
 * + .progress-bar-linear-wrap {
 	margin-top: 8px;
@@ -14509,9 +14521,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .custom-btn2{margin-right:10px;margin-top:0px}.button-group-area .custom-btn2:last-child{margin-right:0}.custom-btn2{display:inline-block;outline:none;line-height:0px;padding:0 20px;font-size:1em;text-align:center;text-decoration:none;font-weight:600;cursor:pointer;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}.custom-btn2:focus{outline:none}.custom-btn2.e-large{padding:0 40px;line-height:50px}.custom-btn2.large{line-height:45px}.custom-btn2.medium{line-height:35px}.custom-btn2.small{line-height:20px}.custom-btn2.radius{border-radius:2px}.custom-btn2.circle{border-radius:3px}.custom-btn2.arrow{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.custom-btn2.arrow span{margin-left:10px}.custom-btn2.default{color:#222;background:#f9f9ff;border:1px solid transparent}.custom-btn2.default:hover{border:1px solid #f9f9ff;background:#fff}.custom-btn2.default-border{border:1px solid #f9f9ff;background:#fff}.custom-btn2.default-border:hover{color:#222;background:#f9f9ff;border:1px solid transparent}.custom-btn2.primary{color:#fff;background:#0072bc;border:1px solid transparent}.custom-btn2.primary:hover{color:#0072bc;border:1px solid #0072bc;background:#fff}.custom-btn2.primary-border{color:#0072bc;border:1px solid #0072bc;background:#fff}.custom-btn2.primary-border:hover{color:#fff;background:#0072bc;border:1px solid transparent}.custom-btn2.success{color:#fff;background:#4cd3e3;border:1px solid transparent}.custom-btn2.success:hover{color:#4cd3e3;border:1px solid #4cd3e3;background:#fff}.custom-btn2.success-border{color:#4cd3e3;border:1px solid #4cd3e3;background:#fff}.custom-btn2.success-border:hover{color:#fff;background:#4cd3e3;border:1px solid transparent}.custom-btn2.info{color:#fff;background:#38a4ff;border:1px solid transparent}.custom-btn2.info:hover{color:#38a4ff;border:1px solid #38a4ff;background:#fff}.custom-btn2.info-border{color:#38a4ff;border:1px solid #38a4ff;background:#fff}.custom-btn2.info-border:hover{color:#fff;background:#38a4ff;border:1px solid transparent}
 
-/*
-.ranking-table-wrap{overflow-x:scroll}.ranking-table{background:#fff;padding:15px 0px 30px 0px;min-width:800px}.ranking-table .rank{width:10%;padding-left:7px}.ranking-table .country{width:20%;padding-left:10px;padding-right:10px}.ranking-table .nodes{width:5%;padding-left:0px;padding-right:30px}.ranking-table .percentage{width:40%;padding-left:40px;padding-right:20px}.ranking-table .table-head{display:flex;}.ranking-table .table-head .rank,.ranking-table .table-head .country,.ranking-table .table-head .nodes,.ranking-table .table-head .percentage{color:#222;line-height:40px;text-transform:uppercase;font-weight:500}.ranking-table .table-row{padding:10px 0;border-top:1px solid #edf3fd;display:flex}.ranking-table .table-row .rank,.ranking-table .table-row .country,.ranking-table .table-row .nodes,.ranking-table .table-row .percentage{display:flex;align-items:center}.ranking-table .table-row .country img{margin-right:15px}.ranking-table .table-row .percentage .progress{width:80%;border-radius:0px;background:transparent}.ranking-table .table-row .percentage .progress .progress-bar{height:5px;line-height:5px}.ranking-table .table-row .percentage .progress .progress-bar.color-1{background-color:#6382e6}.ranking-table .table-row .percentage .progress .progress-bar.color-2{background-color:#e66686}.ranking-table .table-row .percentage .progress .progress-bar.color-3{background-color:#f09359}.ranking-table .table-row .percentage .progress .progress-bar.color-4{background-color:#73fbaf}.ranking-table .table-row .percentage .progress .progress-bar.color-5{background-color:#73fbaf}.ranking-table .table-row .percentage .progress .progress-bar.color-6{background-color:#6382e6}.ranking-table .table-row .percentage .progress .progress-bar.color-7{background-color:#a367e7}.ranking-table .table-row .percentage .progress .progress-bar.color-8{background-color:#e66686}
-*/
 
 .alert-heading{color:inherit}.alert-link{font-weight:700}.alert-dismissible{padding-right:4rem}.alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit}.alert-primary{color:#004085;background-color:#cce5ff;border-color:#b8daff}.alert-primary hr{border-top-color:#9fcdff}.alert-primary .alert-link{color:#002752}.alert-secondary{color:#383d41;background-color:#e2e3e5;border-color:#d6d8db}.alert-secondary hr{border-top-color:#c8cbcf}.alert-secondary .alert-link{color:#202326}.alert-success{color:#155724;background-color:#d4edda;border-color:#c3e6cb}.alert-success hr{border-top-color:#b1dfbb}.alert-success .alert-link{color:#0b2e13}.alert-info{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb}.alert-info hr{border-top-color:#abdde5}.alert-info .alert-link{color:#062c33}.alert-warning{color:#856404;background-color:#fff3cd;border-color:#ffeeba}.alert-warning hr{border-top-color:#ffe8a1}.alert-warning .alert-link{color:#533f03}.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}.alert-danger hr{border-top-color:#f1b0b7}.alert-danger .alert-link{color:#491217}.alert-light{color:#818182;background-color:#fefefe;border-color:#fdfdfe}.alert-light hr{border-top-color:#ececf6}.alert-light .alert-link{color:#686868}.alert-dark{color:#1b1e21;background-color:#d6d8d9;border-color:#c6c8ca}.alert-dark hr{border-top-color:#b9bbbe}.alert-dark .alert-link{color:#040505}
 
@@ -14526,34 +14535,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .ranking-table {
 	background:#fff;
-	padding:15px 0px 30px 0px;
-	min-width:800px
+/*	padding:15px 0px 30px 0px; */
+/*	min-width:800px */
 }
 
 .ranking-table 
 .rank {
-	width:15%;
-	padding-left:0px
+	width:25%;
+	padding-left:15px
 }
 
 .ranking-table 
 .country {
-	width:23%;
-	padding-left:10px;
+	width:50%;
+	padding-left:25px;
 	padding-right:0px
 }
 
 .ranking-table 
 .nodes {
-	width:3%;
-	padding-left:20px;
-	padding-right:0px
-}
-
-.ranking-table 
-.percentage {
-	width:56%;
-	padding-left:0px;
+	width:30%;
+	padding-left:40px;
 	padding-right:0px
 }
 
@@ -14561,12 +14563,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .table-head {
 	display:flex;
 	background: #0f75bc;
+	padding-left:20px;	
+
 }
 
 .ranking-table .table-head .rank,
 .ranking-table .table-head .country,
-.ranking-table .table-head .nodes,
-.ranking-table .table-head .percentage {
+.ranking-table .table-head .nodes {
 	color:#fff;
 	line-height:40px;
 /*	text-transform:uppercase; */
@@ -14594,8 +14597,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .ranking-table .table-row .rank,
 .ranking-table .table-row .country,
-.ranking-table .table-row .nodes,
-.ranking-table .table-row .percentage {
+.ranking-table .table-row .nodes {
 	display:flex;
 	align-items:center
 }
@@ -14604,46 +14606,45 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	margin-right:15px
 }
 
-.ranking-table .table-row .percentage .progress {
+.ranking-table .table-row .progress {
 	width:80%;
 	border-radius:0px;
 	background:transparent
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar {
+.ranking-table .table-row .progress .progress-bar {
 	height:5px;
 	line-height:5px
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-1 {
+.ranking-table .table-row .progress .progress-bar.color-1 {
 	background-color:#6382e6
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-2 {
+.ranking-table .table-row .progress .progress-bar.color-2 {
 	background-color:#e66686
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-3 {
+.ranking-table .table-row .progress .progress-bar.color-3 {
 	background-color:#f09359
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-4 {
+.ranking-table .table-row .progress .progress-bar.color-4 {
 	background-color:#73fbaf
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-5 {
+.ranking-table .table-row .progress .progress-bar.color-5 {
 	background-color:#73fbaf
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-6 {
+.ranking-table .table-row .progress .progress-bar.color-6 {
 	background-color:#6382e6
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-7 {
+.ranking-table .table-row .progress .progress-bar.color-7 {
 	background-color:#a367e7
 }
 
-.ranking-table .table-row .percentage .progress .progress-bar.color-8 {
+.ranking-table .table-row .progress .progress-bar.color-8 {
 	background-color:#e66686
 }
-

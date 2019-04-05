@@ -94,7 +94,7 @@ if (is_array($obj) || is_object($obj))
     }
 }
 
-$url1 = 'https://nodes.nycoin.info/';
+$url1 = 'https:/nodes.nycoin.info/';
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
