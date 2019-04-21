@@ -1,0 +1,30 @@
+{
+  "name": "nyc-site",
+  "version": "1.0.0",
+  "description": "New York Coin main site",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+  "gh-pages-deploy": {
+    "noprompt": true
+  },
+  "scripts": {
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewYorkCoin-NYC/NYC-site.git"
+  },
+  "keywords": [
+    "NewYorkCoin"
+  ],
+  "author": "cmelion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewYorkCoin-NYC/NYC-site/issues"
+  },
+  "homepage": "https://github.com/NewYorkCoin-NYC/NYC-site#readme"
+}
